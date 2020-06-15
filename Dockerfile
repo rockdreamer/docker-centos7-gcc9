@@ -31,6 +31,7 @@ RUN yum update -y \
        m4 \
        libffi-devel \
        openssl-devel \
+       openssl-static \
        pkgconfig \
        subversion \
        zlib-devel \
