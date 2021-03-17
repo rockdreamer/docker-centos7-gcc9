@@ -15,7 +15,7 @@ ENV PATH=/opt/rh/rh-python36/root/usr/bin:/opt/rh/devtoolset-9/root/usr/bin:/opt
     CXX=/opt/rh/devtoolset-9/root/usr/bin/g++ \
     CC=/opt/rh/devtoolset-9/root/usr/bin/gcc
 
-RUN yum update -y \
+RUN yum upgrade -y \
     && yum install -y centos-release-scl \
     && yum install -y \
        sudo \
