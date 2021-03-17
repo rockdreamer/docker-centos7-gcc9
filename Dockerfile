@@ -67,4 +67,4 @@ RUN yum update -y \
     && bash /tmp/cmake-3.17.1-Linux-x86_64.sh --prefix=/usr/local --exclude-subdir \
     && rm /tmp/cmake-3.17.1-Linux-x86_64.sh \
     && pip install -q --upgrade --no-cache-dir pip \
-    && pip install -q --no-cache-dir conan conan-package-tools
+    && pip install -q --no-cache-dir 'conan>=1.34.1,<2.0' conan_package_tools
