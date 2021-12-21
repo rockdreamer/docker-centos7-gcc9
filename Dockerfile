@@ -4,7 +4,7 @@ LABEL maintainer="Claudio Bantalouaks <cbantaloukas@ccdc.cam.ac.uk>"
 # Based on conan-io/gcc_7-centos6 by
 # LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 
-ENV PATH=/opt/rh/rh-python38/root/usr/bin:/opt/rh/devtoolset-9/root/usr/bin:/opt/rh/rh-perl526/root/usr/local/bin:/opt/rh/rh-perl526/root/usr/bin:/opt/rh/sclo-git25/root/usr/bin:${PATH:+:${PATH}} \
+ENV PATH=/opt/rh/rh-python38/root/usr/local/bin:/opt/rh/rh-python38/root/usr/bin:/opt/rh/devtoolset-9/root/usr/bin:/opt/rh/rh-perl526/root/usr/local/bin:/opt/rh/rh-perl526/root/usr/bin:/opt/rh/sclo-git25/root/usr/bin:${PATH:+:${PATH}} \
     MANPATH=/opt/rh/rh-python38/root/usr/share/man:/opt/rh/devtoolset-9/root/usr/share/man:/opt/rh/rh-perl526/root/usr/share/man:/opt/rh/sclo-git25/root/usr/share/man:${MANPATH:+:${MANPATH}} \
     INFOPATH=/opt/rh/devtoolset-9/root/usr/share/info${INFOPATH:+:${INFOPATH}} \
     PCP_DIR=/opt/rh/devtoolset-9/root \
