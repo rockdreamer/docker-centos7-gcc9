@@ -4,14 +4,14 @@ LABEL maintainer="Claudio Bantalouaks <cbantaloukas@ccdc.cam.ac.uk>"
 # Based on conan-io/gcc_7-centos6 by
 # LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 
-ENV PATH=/opt/rh/rh-python36/root/usr/bin:/opt/rh/devtoolset-9/root/usr/bin:/opt/rh/rh-perl526/root/usr/local/bin:/opt/rh/rh-perl526/root/usr/bin:/opt/rh/sclo-git25/root/usr/bin:${PATH:+:${PATH}} \
-    MANPATH=/opt/rh/rh-python36/root/usr/share/man:/opt/rh/devtoolset-9/root/usr/share/man:/opt/rh/rh-perl526/root/usr/share/man:/opt/rh/sclo-git25/root/usr/share/man:${MANPATH:+:${MANPATH}} \
+ENV PATH=/opt/rh/rh-python38/root/usr/bin:/opt/rh/devtoolset-9/root/usr/bin:/opt/rh/rh-perl526/root/usr/local/bin:/opt/rh/rh-perl526/root/usr/bin:/opt/rh/sclo-git25/root/usr/bin:${PATH:+:${PATH}} \
+    MANPATH=/opt/rh/rh-python38/root/usr/share/man:/opt/rh/devtoolset-9/root/usr/share/man:/opt/rh/rh-perl526/root/usr/share/man:/opt/rh/sclo-git25/root/usr/share/man:${MANPATH:+:${MANPATH}} \
     INFOPATH=/opt/rh/devtoolset-9/root/usr/share/info${INFOPATH:+:${INFOPATH}} \
     PCP_DIR=/opt/rh/devtoolset-9/root \
     PERL5LIB=/opt/rh/devtoolset-9/root/usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-9/root/usr/lib/perl5:/opt/rh/devtoolset-9/root//usr/share/perl5/vendor_perl:/opt/rh/sclo-git25/root/usr/share/perl5/vendor_perl${PERL5LIB:+:${PERL5LIB}} \
-    LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/rh-python36/root/usr/lib64:/opt/rh/rh-perl526/root/usr/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}} \
-    PKG_CONFIG_PATH=/opt/rh/rh-python36/root/usr/lib64/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}} \
-    XDG_DATA_DIRS="/opt/rh/rh-python36/root/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}" \
+    LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/rh-python38/root/usr/lib64:/opt/rh/rh-perl526/root/usr/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}} \
+    PKG_CONFIG_PATH=/opt/rh/rh-python38/root/usr/lib64/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}} \
+    XDG_DATA_DIRS="/opt/rh/rh-python38/root/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}" \
     CXX=/opt/rh/devtoolset-9/root/usr/bin/g++ \
     CC=/opt/rh/devtoolset-9/root/usr/bin/gcc
 
@@ -40,7 +40,7 @@ RUN yum upgrade -y \
        xz-devel \
        tar \
        devtoolset-9-toolchain \
-       rh-python36 \
+       rh-python38 \
        rh-perl526 \
        sclo-git25 \
        help2man \
