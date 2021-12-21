@@ -63,8 +63,8 @@ RUN yum upgrade -y \
     && make install \
     && popd \
     && rm -rf /tmp/automake-1.16* \
-    && wget -O /tmp/cmake-3.19.7-Linux-x86_64.sh --no-check-certificate --quiet 'https://cmake.org/files/v3.19/cmake-3.19.7-Linux-x86_64.sh' \
-    && bash /tmp/cmake-3.19.7-Linux-x86_64.sh --prefix=/usr/local --exclude-subdir \
-    && rm /tmp/cmake-3.19.7-Linux-x86_64.sh \
+    && wget -O /tmp/cmake-3.22.1-Linux-x86_64.sh --no-check-certificate --quiet 'https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-linux-x86_64.sh' \
+    && bash /tmp/cmake-3.22.1-Linux-x86_64.sh --prefix=/usr/local --exclude-subdir \
+    && rm /tmp/cmake-3.22.1-Linux-x86_64.sh \
     && pip install -q --upgrade --no-cache-dir pip \
     && pip install -q --no-cache-dir 'conan>=1.34.1,<2.0' conan_package_tools
